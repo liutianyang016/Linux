@@ -19,7 +19,7 @@ grade_management_system  # 可执行文件
 .idea/
 *.code-workspace
 
-# 数据库文件（如果不想跟踪实际数据）
+# 数据库文件
 data/grades.db
 data/*.db
 data/*.sqlite
