@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include "menu.h"
+#include "student.h"
+
+void show_main_menu() {
+    int choice;
+    
+    do {
+        printf("\n=== 成绩管理系统 ===\n");
+        printf("1. 添加学生成绩\n");
+        printf("2. 查询学生成绩\n");
+        printf("3. 修改学生成绩\n");
+        printf("4. 删除学生记录\n");
+        printf("5. 显示所有记录\n");
+        printf("0. 退出系统\n");
+        printf("请选择操作: ");
+        
+        scanf("%d", &choice);
+        
+        switch(choice) {
+            case 1:
+                add_student_grade();
+                break;
+            case 2:
+                query_student_grade();
+                break;
+            case 3:
+                modify_student_grade();
+                break;
+            case 4:
+                delete_student_record();
+                break;
+            case 5:
+                display_all_records();
+                break;
+            case 0:
+                printf("感谢使用，再见！\n");
+                break;
+            default:
+                printf("无效选择，请重试！\n");
+        }
+    } while(choice != 0);
+}
