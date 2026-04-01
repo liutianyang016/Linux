@@ -1,0 +1,14 @@
+Student-Grade-Management-System/
+├── src/
+│   ├── main.c              # 主程序入口
+│   ├── database.c          # 数据库操作
+│   ├── database.h          
+│   ├── menu.c              # 菜单系统
+│   ├── menu.h              
+│   ├── student.c           # 学生相关功能
+│   └── student.h          
+├── data/
+│   └── grades.db           # SQLite数据库文件
+├── Makefile                # 编译配置
+├── README.md               # 项目说明
+└── LICENSE                 # 开源协议

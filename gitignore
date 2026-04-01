@@ -1,0 +1,52 @@
+# 编译生成的文件
+*.o
+*.a
+*.so
+*.out
+grade_management_system  # 可执行文件
+
+# 编辑器临时文件
+*~
+*.swp
+*.swo
+*.swn
+.DS_Store
+._*
+*.bak
+
+# IDE相关
+.vscode/
+.idea/
+*.code-workspace
+
+# 数据库文件
+data/grades.db
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# 本地配置文件
+config.ini
+*.local
+
+# 日志文件
+*.log
+
+# 测试生成的文件
+test/test_binary
+test/*.o
+
+# 依赖目录
+deps/
+build/
+dist/
+
+# macOS系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini

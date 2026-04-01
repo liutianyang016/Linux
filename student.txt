@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include "student.h"
+#include "database.h"
+
+void add_student_grade() {
+    char name[50];
+    char student_id[20];
+    char course[50];
+    float grade;
+    
+    printf("\n--- 添加学生成绩 ---\n");
+    printf("学生姓名: ");
+    scanf("%s", name);
+    printf("学号: ");
+    scanf("%s", student_id);
+    printf("课程名称: ");
+    scanf("%s", course);
+    printf("成绩: ");
+    scanf("%f", &grade);
+    
+    if(add_grade(name, student_id, course, grade) == 0) {
+        printf("成绩添加成功！\n");
+    } else {
+        printf("成绩添加失败！\n");
+    }
+}
+
+// 
